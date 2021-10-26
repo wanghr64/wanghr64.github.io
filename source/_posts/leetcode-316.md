@@ -16,10 +16,11 @@ categories:
 
 **示例：**
 
-```
-输入：s = "cbacdcbc"
-输出："acdb"
-```
+
+> 输入：s = "cbacdcbc"
+> 
+> 输出："acdb"
+
 
 ## 题解
 
