@@ -2,8 +2,8 @@
 # Header config
 title: 冬春
 author: wanghr64
-logo_img: https://demo.theme-kaze.top/img/Kaze.png # put the logo on the ${blog_path}/source/img/${picname}.png or use urls
-author_img: https://demo.theme-kaze.top/img/Kaze.png
+logo_img: https://pic-1302007621.cos.ap-shanghai.myqcloud.com/img/2021/10/26/15-54-31-2609b8ba68f2173bcd7fe1c6dbf8571b.png # put the logo on the ${blog_path}/source/img/${picname}.png or use urls
+author_img: https://pic-1302007621.cos.ap-shanghai.myqcloud.com/img/2021/10/26/16-00-23-ee9b7d47fda2a5272d107a8ed4b49526.png
 author_description: 消化月亮，消化铀。
 #------------------------
 # Navbar config
@@ -12,7 +12,7 @@ menus:
   home: /
   #archive: /archives
   tags: /tags
-  #categories: /categories
+  categories: /categories
   #about: /about
   #friends: /links
   # artitalk: /shuoshuo # You can uncomment to add this route

@@ -5,6 +5,8 @@ tags:
 - 力扣
 - 算法
 - 单调栈
+categories:
+- 力扣
 ---
 
 ## 题目描述
@@ -42,7 +44,7 @@ tags:
 
 题目中建议使用一个$O(m+n)$时间复杂度的算法。评论区中看到这样一句话：
 
-![](https://www.png8.com/imgs/2021/10/81f64888c96c8cc8.png)
+![](https://pic-1302007621.cos.ap-shanghai.myqcloud.com/img/ddz.png)
 
 单调栈的具体使用方法是：
 1. 倒序遍历`nums2`，维护从栈底到栈顶元素**单调递减**。也就是在处理当前的`nums2[i]`时，将栈中所有小于`nums2[i]`的元素都弹出。
