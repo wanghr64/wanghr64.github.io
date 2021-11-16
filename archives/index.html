@@ -64,6 +64,37 @@
   </script>
   
     
+      
+      
+      
+      
+        
+        
+        
+        <script>
+          function prismThemeChange() {
+            if(document.getElementById('theme-color').dataset.mode === 'dark') {
+              if(document.querySelector('[data-prism]')) {
+                changeCSS('/js/lib/prism/prism-tomorrow.min.css', '[data-prism]', 'prism-tomorrow');
+              } else {
+                loadCSS('/js/lib/prism/prism-tomorrow.min.css', 'prism', 'prism-tomorrow');
+              }
+            } else {
+              if(document.querySelector('[data-prism]')) {
+                changeCSS('/js/lib/prism/prism.min.css', '[data-prism]', 'prism');
+              } else {
+                loadCSS('/js/lib/prism/prism.min.css', 'prism', 'prism');
+              }
+            }
+          }
+          prismThemeChange()
+        </script>
+      
+      
+        
+        <link rel="stylesheet" href="/js/lib/prism/prism-line-numbers.min.css">
+      
+    
   
   <script>
     // control reverse button
@@ -103,15 +134,18 @@
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[setting];
         document.getElementById('theme-color').dataset.mode = setting;
+        prismThemeChange();
       } else if(reverseDarkList[setting]) {
         document.documentElement.setAttribute('data-user-color-scheme', setting);
         document.getElementById('theme-color').content = themeColor[setting];
         document.getElementById('theme-color').dataset.mode = setting;
+        prismThemeChange();
       } else {
         document.documentElement.removeAttribute('data-user-color-scheme');
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
         document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
+        prismThemeChange();
       }
     };
     setDarkmode();
@@ -267,22 +301,6 @@
       </div>
     </div>
   
-    
-    <div class="archive-timeline-item">
-      <div class="archive-timeline-post">
-        <div class="card card-content">
-          <div class="archive-timeline-post-date">2021-11-15</div>
-          <div class="archive-timeline-post-content">
-            <a 
-              href="/2021/11/15/hello-world/"
-              class="archive-timeline-post-item">
-              Hello World
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  
 </div>
 </main>
             <aside class="left-column">
@@ -302,7 +320,7 @@
   <a 
     class="author-posts-count" 
     href="/archives">
-    <span>2</span>
+    <span>1</span>
     <span>文章</span>
   </a>
   <a 
@@ -349,15 +367,15 @@
   <div class="tags-list">
     
       <a 
-        href="/tags/%E6%8A%98%E8%85%BE/" 
-        title="折腾">
-        <div class="tags-list-item">折腾</div>
-      </a>
-    
-      <a 
         href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/" 
         title="路由器">
         <div class="tags-list-item">路由器</div>
+      </a>
+    
+      <a 
+        href="/tags/%E6%8A%98%E8%85%BE/" 
+        title="折腾">
+        <div class="tags-list-item">折腾</div>
       </a>
     
   </div>
@@ -383,16 +401,12 @@
         
       
     
-      
-        
-      
-    
     
       <a 
         href="/archives/2021" 
         class="archive-card-list-item">
         2021
-        <span class="archive-card-list-item-badge">2</span>
+        <span class="archive-card-list-item-badge">1</span>
       </a>
     
   </div>
@@ -421,11 +435,6 @@
         <a href="/2021/11/15/ac2100-openwrt-ipv6/"><div class="recent-posts-item-content">红米ac2100使用OpenWrt获取教育网ipv6地址</div></a>
       </div>
     
-      <div class="recent-posts-item">
-        <div class="recent-posts-item-title">2021-11-15</div>
-        <a href="/2021/11/15/hello-world/"><div class="recent-posts-item-content">Hello World</div></a>
-      </div>
-    
   </div>
 </div>
   </article>
@@ -449,16 +458,12 @@
         
       
     
-      
-        
-      
-    
     
       <a 
         href="/archives/2021" 
         class="archive-card-list-item">
         2021
-        <span class="archive-card-list-item-badge">2</span>
+        <span class="archive-card-list-item-badge">1</span>
       </a>
     
   </div>
